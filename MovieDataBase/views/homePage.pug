@@ -1,0 +1,56 @@
+doctype html
+// This page displays the homepage of the movie database
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/homePageStyle.css")
+    
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+      
+    h1 Movie-Base
+    .container
+      .subtitle Welcome Back!
+
+      //- p#demo
+      //- image.img1(src="./images/theatre.gif")
+      //- image.img2(src="./images/spongebobMovie.gif")
+      .recommendedMovies Recommended Movies
+      .signin-page
+        .form
+
+        //each movie in movies
+
+        a(href="/movies/" + movies[0].id).recomTitle1 #{movies[0].title}
+        a(href="/movies/" + movies[1].id).recomTitle2 #{movies[1].title}
+        a(href="/movies/" + movies[2].id).recomTitle3 #{movies[2].title}
+        image.img3(src= movies[0].poster)
+        image.img4(src= movies[1].poster)
+        image.img5(src= movies[2].poster)
+
+      
+  //-         form.signin-template(action="/homePage" method="post")
+  //-           input(type="text" name="username" placeholder="Username")
+  //-           input(type="password" name="password" placeholder="Password")
+  //-           button(type="submit") Sign In
+  //-           p.forgotpassword
+  //-             | Forgot Password? 
+  //-             a(href="/changePassword" style="color: cornflowerblue;") Change Password
+  //-           p.message
+  //-             | Not a part of Movie-Base yet? 
+  //-             a(href="/signupPage" style="color: cornflowerblue;")  Create an account
+  //-   .scanlines
+  //- // <script src="server.js"></script>

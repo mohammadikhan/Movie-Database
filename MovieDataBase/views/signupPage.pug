@@ -1,0 +1,29 @@
+doctype html
+// This page displays page of creating an account
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/signupPageStyle.css")
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/login") Login
+      //- a(href="/searchForMovies") Search for Movies
+      //- a(href="/userPage") Profile
+      //- a(href="#about") About
+    h1 Movie-Base
+    .container
+      .message Create Your Movie-Base Account
+      .search
+        .form
+          form.createAccount-template(method="POST" action="/signupPage")
+            label(for="username")
+            input(name="username" placeholder="Enter Username" required)
+            label(for="password") 
+            input(name="password" type="password" placeholder="Enter password" required )
+            //- input(type="password" placeholder="Confirm Password" require) 
+            #results
+            button(type="submit") Sign Up! 
+    .scanlines

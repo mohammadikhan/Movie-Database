@@ -1,0 +1,35 @@
+doctype html
+// This page displays how the user can change their password
+
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/changePasswordStyle.css")
+
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //- a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+
+    h1 Movie-Base
+    .container
+      .addPersonMessage Add person (actor, director, writer)
+      .search
+        .form
+          form.updatePassword-template
+            input(type="text" placeholder="Name of person")
+            input(type="text" placeholder="Role (actor, director, writer)")
+            //- input(type="password" placeholder="Confirm New Password")
+            #results
+            button Add Person
+    .scanlines

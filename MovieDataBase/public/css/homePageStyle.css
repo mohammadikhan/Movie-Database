@@ -1,0 +1,181 @@
+.subtitle {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 150%;
+  position: relative;
+  top: 57%;
+  left: 40%;
+  margin-right: 80%;
+
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 500%;
+  color: rgb(226, 153, 43);
+  position: relative;
+  top: 15%;
+  left: 31.5%;
+  margin-right: 60%;
+} 
+
+.img1 {
+  border-radius: 70%;
+  width: 300px;
+  right: 50px;
+  position: relative;
+  left: 4%;
+  top: 20%;
+}
+
+.img2 {
+  border-radius: 50%;
+  width: 310px;
+  right: -50%;
+  position: relative;
+  top: 20%;
+}
+
+.img3 {
+  width: 200px;
+  right: 40px;
+  position: absolute;
+  left: -80%;
+  top: 125%;
+
+}
+
+.img4 {
+
+  width: 200px;
+  right: 40px;
+  position: absolute;
+  left: 30%;
+  top: 135%;
+}
+
+.img5 {
+  width: 200px;
+  right: 40px;
+  position: absolute;
+  left: 130%;
+  top: 145%;
+
+}
+
+.welcome{
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  position: absolute;
+  font-size: 200%;
+  color: rgb(226, 153, 43);
+  top: 45%;
+  left: 30%;
+}
+
+.recommendedMovies{
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  position: absolute;
+  font-size: 200%;
+  color: rgb(226, 153, 43);
+  top: 45%;
+  left: 38%;
+}
+
+.signin-page {
+  width: 360px;
+  padding: 8% 0 0;
+  position: absolute;
+  top: 38%;
+  right: 38%;
+  
+}
+
+.form button{
+  width: 50%;
+  padding: 16px;
+  font-family: "Lucida Console", Courier, monospace;
+  position: absolute;
+  top: 115%;
+  left: 27%;
+  background: rgb(226, 153, 43);
+}
+
+.form input{
+  background:white;
+  padding: 10px;
+  position: relative;
+  top: 51%;
+  right: -24%;
+  width: 50%;
+  
+}
+
+.form .message {
+  font-family: "Lucidia Console", Courier, monospace;
+  font-size: 110%;
+  text-align: center;
+  position: fixed;
+  color:rgb(226, 153, 43);
+  top: 89%;
+  left: 33%;
+}
+
+.form .forgotpassword{
+  font-family: "Lucidia Console", Courier, monospace;
+  font-size: 110%;
+  text-align: center;
+  position: fixed;
+  color: rgb(226, 153, 43);
+  top: 82%;
+  right: 10%;
+  left: 12%
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  font-family: "Lucidia Console", Courier, monospace;
+  float: left;
+  color : #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} 
+
+.recomTitle1 {
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: -65%;
+  top: 80%;
+}
+
+.recomTitle2 {
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 45%;
+  top: 90%;
+}
+
+.recomTitle3 {
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  
+  left: 145%;
+  top: 90%;
+}

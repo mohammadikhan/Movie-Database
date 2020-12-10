@@ -1,0 +1,100 @@
+.subtitle {
+    font-family: "Lucida Console", Courier, monospace;
+    text-align: center;
+    color: rgb(226, 153, 43);
+    font-size: 150%;
+    position: relative;
+    top: 57%;
+    left: 40%;
+    margin-right: 80%;
+  }
+    
+  h1 {
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 300%;
+    color: rgb(226, 153, 43);
+    position: relative;
+    top: 15%;
+    left: 31.5%;
+    margin-right: 60%;
+  } 
+  
+  .followers{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    font-size: 200%;
+    color: rgb(226, 153, 43);
+    top: 36%;
+    left: 3%;
+  }
+
+  .usersFollowing{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    font-size: 200%;
+    color: rgb(226, 153, 43);
+    top: 36%;
+    left: 25%;
+  }
+
+  .peopleFollowing{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    font-size: 200%;
+    color: rgb(226, 153, 43);
+    top: 36%;
+    left: 55%;
+  }
+
+  .reviewsMade{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    font-size: 200%;
+    color: rgb(226, 153, 43);
+    top: 55%;
+    left: 3%;
+  }
+
+  .accountType{
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    font-size: 200%;
+    color: rgb(226, 153, 43);
+    top: 55%;
+    left: 32%;
+  }
+
+  
+
+  
+        
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+    
+  .topnav a {
+    font-family: "Lucidia Console", Courier, monospace;
+    float: left;
+    color : #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; 
+  } 
+
+button{
+    width: 15%;
+    padding: 12px;
+    font-family: "Lucida Console", Courier, monospace;
+    position: absolute;
+    top: 43%;
+    left: 60%;
+    background: rgb(226, 153, 43);
+  }

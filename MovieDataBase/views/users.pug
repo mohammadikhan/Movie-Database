@@ -1,0 +1,40 @@
+doctype html
+// This page displays other users in the database and the information of their account
+
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="/images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="/css/userPageStyle.css")
+
+  body(style="background-color: black;" background="/images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/homePage") Home
+        a(href="/movies") Search for Movies
+        a(href="/users") Search for Users
+        //a(href="/users/" + user.id) Profile
+        a(href="/people") Search for People
+        a(href="/addPeople") Add Person
+        a(href="/addMovie") Add Movie
+        a(href="/logout") Log Out
+        a(href="#about") About
+    
+
+    if session.loggedin
+      //each users in user
+      h1 User: #{user.username}!
+        button Follow
+      .container
+        //- a(href="").followers Followers: #{user.followers.length}
+        //- a(href="").usersFollowing Users Following: #{user.usersFollowing.length}
+        //- a(href="").peopleFollowing People Following: #{user.peopleFollowing.length}
+        //- a(href="").reviewsMade Reviews Made: #{user.reviews.length}
+
+        if session.accountType == false
+          a(href="").accountType Account Type: Regular 
+        else
+          a(href="").accountType Account Type: Contributing 
+
+      .scanlines

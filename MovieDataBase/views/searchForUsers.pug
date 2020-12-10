@@ -1,0 +1,59 @@
+doctype html
+// This page displays how the user can search for other users in the database
+html(lang="en")
+  head
+    title Movie-Base
+    alert(title)
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/searchForMoviesStyle.css")
+
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+
+    h1 Movie-Base
+    .container
+      .message Search the Users of the Movie-Base
+      .search
+        .form
+          form.search-template(action='/users' method='post')
+            label(for='searchMovie') Search for Movie
+            input#text(type="text" name='searchUser' placeholder="Search for users")
+            #results
+            button#searchButton(type='submit') Search
+            img#poster
+
+          #movieDisplay
+
+            if user != null
+              each users in user
+                |
+                br
+                a(href="/users/" + users.id).someText User Found: #{users.username}
+                //button(type='submit') Follow
+                
+                |
+                br
+
+                |
+                br
+                |
+                br
+                |
+                br
+                |
+                br
+            else
+              
+
+  .scanlines

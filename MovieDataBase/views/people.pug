@@ -1,0 +1,115 @@
+doctype html
+// This page displays a specific person (actor, driector or writer) in the database
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="/images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="/css/searchForMoviesStyle.css")
+
+  body(style="background-color: black;" background="/images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+
+    .container
+      .search
+        .form
+          div#movieDisplay
+            //if actor != null
+            each person in people
+
+              if person.actorRole == true
+                h1 Displaying Actor
+                a(href="/people/" + person.id ).actorName Actor: #{person.name}
+                .followActor
+                  button Follow
+
+                .worksMessage List of Movies this actor has been in:
+                //p.plot Movies this actor has been in: #{actors.works}
+                
+                - for (var i = 0; i < person.works.length; i++)
+                    ul  
+                        a(href="/movies/" + person.works[i]).listOfMovies #{person.movieTitles[i]}
+                        |
+                        br
+                        |
+                        br
+
+                .frequentCollabTitle List of Frequent Collaborators:
+                - for (var i = 0; i < person.frequentCollaborators.length; i++)
+                    ul
+
+                      a(href="/people/" + person.frequentCollaborators[i]).listOfFrequentCollabs #{person.frequentCollaboratorsNames[i]}
+                      |
+                      br
+                      |
+                      br
+
+              else if person.directorRole == true
+                h1 Displaying Director
+                a(href="/people/" + person.id ).actorName Director: #{person.name}
+                .followDirector
+                  button Follow
+
+                .worksMessage List of Movies Directed:
+                //p.plot Movies this actor has been in: #{actors.works}
+                
+                - for (var i = 0; i < person.works.length; i++)
+                    ul
+                        
+                        a(href="/movies/" + person.works[i]).listOfMovies #{person.movieTitles[i]}
+                        |
+                        br
+                        |
+                        br
+
+                .frequentCollabTitle List of Frequent Collaborators:
+                - for (var i = 0; i < person.frequentCollaborators.length; i++)
+                  ul
+
+                    a(href="/people/" + person.frequentCollaborators[i]).listOfFrequentCollabs #{person.frequentCollaboratorsNames[i]}
+                    |
+                    br
+                    |
+                    br
+
+              else if person.writerRole == true
+                h1 Displaying Writer
+                a(href="/people/" + person.id ).actorName Writer: #{person.name}
+                .followWriter
+                  button Follow
+
+                .worksMessage List of Movies this Written:
+                //p.plot Movies this actor has been in: #{actors.works}
+                
+                - for (var i = 0; i < person.works.length; i++)
+                    ul
+                        
+                        a(href="/movies/" + person.works[i]).listOfMovies #{person.movieTitles[i]}
+                        |
+                        br
+                        |
+                        br
+
+                .frequentCollabTitle List of Frequent Collaborators:
+                - for (var i = 0; i < person.frequentCollaborators.length; i++)
+                  ul
+
+                    a(href="/people/" + person.frequentCollaborators[i]).listOfFrequentCollabs #{person.frequentCollaboratorsNames[i]}
+                    |
+                    br
+                    |
+                    br
+                  
+    .scanlines
+
+    script(src="/expressServer.js")

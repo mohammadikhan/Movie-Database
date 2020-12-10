@@ -1,0 +1,59 @@
+doctype html
+// This page displays how the user can search for movies
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/searchForMoviesStyle.css")
+
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+
+    h1 Movie-Base
+    .container
+      .message Search the Movie-Base
+      .search
+        .form
+          form.search-template(action='/movies' method='post')
+            label(for='searchMovie') Search for Movie
+            input#text(type="text" name='searchMovie' placeholder="Search for movies, genre" required)
+            #results
+            button#searchButton(type='submit') Search
+            img#poster
+
+          #movieDisplay
+
+            if movie != null
+              each movies in movie
+                |
+                br
+                a(href="/movies/" + movies.id).someText #{movies.title}
+                //- p.someText Plot: #{movies.Plot}
+                |
+                br
+                img.searchImage(src=movies.poster)
+
+                |
+                br
+                |
+                br
+                |
+                br
+                |
+                br
+
+
+            
+  .scanlines

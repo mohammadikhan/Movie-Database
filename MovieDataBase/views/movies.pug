@@ -1,0 +1,102 @@
+doctype html
+// This page displays how the movies in the database
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="/images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="/css/searchForMoviesStyle.css")
+
+  body(style="background-color: red;" background="/images/cinematicMoving.gif")
+    .topnav
+      a.active(href="/homePage") Home
+      a(href="/movies") Search for Movies
+      a(href="/users") Search for Users
+      //- a(href="/users/" + user.id) Profile
+      a(href="/people") Search for People
+      a(href="/addPeople") Add Person
+      a(href="/addMovie") Add Movie
+      a(href="/logout") Log Out
+      a(href="#about") About
+                
+    h1 Movie-Base
+    .container
+      .message Search the Movie-Base
+      .search
+        .form
+          form.search-template(action='/movies' method='post')
+            label(for='searchMovie') Search for Movie
+            input#text(type="text" name='searchMovie' placeholder="Search for movies, genre" required)
+            #results
+            button#searchButton(type='submit') Search
+            img#poster
+
+          div#movieDisplay
+            if movie != null
+              each movies in movie
+                a(href="/movies/" + movies.id).movieTitle #{movies.title}
+                p.plot Plot: #{movies.plot}
+                p.releaseYear Released:  
+                a(href= "/movies?year=" + movies.year).year #{movies.year}
+
+                p.averageRating Average Rating: #{movies.reviews}
+                - let total = 0
+                - for (var i = 0; i < movies.basicReviews.length; i++)
+                  - total += movies.basicReviews[i] / movies.basicReviews.length
+                //p.ratingTotal #{total}
+                a(href="/movies?minrating=" + total).ratingTotal #{total}
+
+                p.runtime Runtime: #{movies.runtime}
+                
+                p.actors Actors:
+                - for (var i = 0; i < movies.actorsLink.length; i++) 
+                    a(href=movies.actorsLink[i]).actorList  #{movies.actors[i]}       
+                    |""
+
+                p.writer Writers: 
+                - for(var i = 0; i < movies.writersLink.length; i++)
+                    a(href=movies.writersLink[i]).writerList #{movies.writers[i]}
+                    |""
+
+                p.director Director:
+                -for(var i = 0; i < movies.directorsLink.length; i++)
+                  a(href=movies.directorsLink[i]).directorList #{movies.directors}
+                  
+              
+                p.genre Genre: 
+                - for (var i = 0; i < movies.genre.length; i++)
+                  if (movies.genre[i] != null)
+                    a(href="/movies?genre=" + movies.genre[i].toLowerCase()).genreList #{movies.genre[i]}
+                    | ""
+
+                    
+
+                img.poster(src=movies.poster)
+
+                p.reviews Reviews for this movie: 
+                if (movies.basicReviews.length == 0)
+                  p.reviewsMessage No Reviews Yet! Be the first to add a Review!
+
+
+                p.basicReviewMessage Add a Basic Review:
+                form.basicReview-template
+                  input(type="text" placeholder="Add Basic Review (score out of 10)")
+
+                p.fullReviewMessage Add a Full Review:
+                form.fullReview-template
+                  input(type="text" placeholder="Add rating (score out of 10)")
+              
+                form.fullReview-template
+                  input(type="text" placeholder="Add rating (score out of 10)")
+
+                form.fullReviewSum-template
+                  input(type="text" placeholder="Add brief summary")
+
+                form.fullReviewText-template
+                  input(type="text" placeholder="Add a full review text")
+
+                
+                
+                  
+    .scanlines

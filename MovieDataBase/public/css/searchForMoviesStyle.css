@@ -1,0 +1,416 @@
+.subtitle {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 150%;
+  position: relative;
+  top: 57%;
+  left: 40%;
+  margin-right: 80%;
+}
+  
+h1 {
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 500%;
+  color: rgb(226, 153, 43);
+  position: relative;
+  top: 15%;
+  left: 31.5%;
+  margin-right: 60%;
+} 
+
+.poster {
+  width: 300px;
+  right: 50px;
+  position: absolute;
+  left: 4%;
+  top: 55%;
+
+}
+
+.message{
+  text-align: center;
+  font-family: "Lucida Console", Courier, monospace;
+  position: absolute;
+  font-size: 200%;
+  color: rgb(226, 153, 43);
+  top: 32%;
+  left: 35%;
+  
+}
+
+.movieTitle{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 105%;
+  font-weight: bold;
+  right: 15%;
+  left: 30%;
+  top: 55%;
+
+}
+
+.actors{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 30%;
+  top: 80%;
+
+
+}
+
+.director{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 77%;
+  top: 70.3%;
+
+}
+
+.writer{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 30%;
+  top: 91%;
+
+
+}
+.plot{
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 95px;
+  left: 400px;
+  top: 375px;
+  
+}
+
+.releaseYear{
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 30%;
+  top: 70%;
+  
+}
+
+.year{
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 100%;
+  left: 38%;
+  top: 72.5%;
+
+}
+  
+.averageRating{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 45%;
+  top: 70%;
+}
+
+.ratingTotal{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 57%;
+  top: 72.5%;
+}
+
+.genre{
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: -13%;
+  left: 30%;
+  top: 345px;
+
+}
+
+.genreList{
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: -15%;
+  left: 38%;
+  top: 313px;
+}
+
+.reviews {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 160%;
+  position: absolute;
+  top: 130%;
+  left: 5%;
+  /* margin-right: 80%; */
+}
+
+.reviewsMessage {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 160%;
+  position: absolute;
+  top: 130%;
+  left: 35%;
+  /* margin-right: 80%; */
+}
+
+.runtime{
+
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 15%;
+  left: 62%;
+  top: 70%;
+
+}
+
+.someText{
+  font-family: "Lucida Console", Courier, monospace;
+  color: rgb(226, 153, 43);
+  top: 55px;
+  left: 550px;
+  position: relative;
+}
+
+.searchImage{
+
+  position: relative;
+  left: 480px;
+  top: 95px;
+  
+}
+
+.form button{
+  width: 15%;
+  padding: 12px;
+  font-family: "Lucida Console", Courier, monospace;
+  position: absolute;
+  top: 43%;
+  left: 60%;
+  background: rgb(226, 153, 43);
+}
+  
+.form input{
+  background:white;
+  padding: 10px;
+  position: absolute;
+  top: 43%;
+  right: 40%;
+  width: 30%; 
+}
+
+.basicReview-template {
+  width: 760px;
+  padding: 8% 0 0;
+  position: absolute;
+  top: 146%;
+  right: 30%;  
+}
+
+.fullReview-template {
+  width: 760px;
+  padding: 8% 0 0;
+  position: absolute;
+  top: 166%;
+  right: 30%;  
+}
+
+.fullReviewSum-template {
+  width: 150%;
+  padding: 8% 0 0;
+  position: absolute;
+  top: 176%;
+  right: -35%;  
+}
+
+.fullReviewText-template {
+  width: 150%;
+  padding: 8% 0 0;
+  position: absolute;
+  top: 186%;
+  right: -35%;  
+}
+
+.basicReviewMessage {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 160%;
+  position: absolute;
+  top: 150%;
+  left: 5%; 
+}
+
+.fullReviewMessage {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  color: rgb(226, 153, 43);
+  font-size: 160%;
+  position: absolute;
+  top: 170%;
+  left: 5%; 
+}
+  
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+  
+.topnav a {
+  font-family: "Lucidia Console", Courier, monospace;
+  float: left;
+  color : #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+} 
+
+.actorList {
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  top: 246px;
+  right: -510px;
+}
+
+.directorList {
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 0;
+  left: 85%;
+  top: 72.6%;
+}
+
+.writerList {
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  top: 316px;
+  right: 110px;
+  
+
+}
+
+.actorName {
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 200%;
+  right: 15%;
+  left: 35%;
+  top: 55%;
+}
+
+.worksMessage {
+  color: rgb(226, 153, 43);
+  position: absolute;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 150%;
+  right: 15%;
+  left: 5%;
+  top: 70%;
+}
+
+.listOfMovies{
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 20%;
+  left: 205px;
+  top: 199px;
+  
+}
+
+.followActor button{
+  width: 15%;
+  padding: 12px;
+  font-family: "Lucida Console", Courier, monospace;
+  position: relative;
+  top: -35px;
+  left: 75%;
+  background: rgb(226, 153, 43);
+}
+
+.followDirector button{
+  width: 15%;
+  padding: 12px;
+  font-family: "Lucida Console", Courier, monospace;
+  position: relative;
+  top: -30px;
+  left: 80%;
+  background: rgb(226, 153, 43);
+}
+
+.followWriter button{
+  width: 15%;
+  padding: 12px;
+  font-family: "Lucida Console", Courier, monospace;
+  position: relative;
+  top: -35px;
+  left: 75%;
+  background: rgb(226, 153, 43);
+}
+
+.frequentCollabTitle {
+    color: rgb(226, 153, 43);
+    position: absolute;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 150%;
+    right: 25px;
+    left: 750px;
+    top: 70%;
+  
+}
+
+.listOfFrequentCollabs {
+  color: rgb(226, 153, 43);
+  position: relative;
+  font-family: "Lucida Console", Courier, monospace;
+  font-size: 100%;
+  right: 50%;
+  left: 870px;
+  top: 100px;
+}
+

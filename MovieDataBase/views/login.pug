@@ -1,0 +1,38 @@
+doctype html
+// This page displays the log in page of the movie database
+html(lang="en")
+  head
+    title Movie-Base
+    link(href="./images/movieIcon.png" rel="icon")
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width")
+    link(rel="stylesheet" href="./css/homePageStyle.css")
+  body(style="background-color: black;" background="./images/cinematicMoving.gif")
+    .topnav
+      a.active(href="#home") Home
+      //a(href="/searchForMovies") Search Movies
+      //a(href="/userPage") Profile
+      //a(href="/searchForUsers") Search Users
+      //a(href="#about") About
+      
+    h1 Movie-Base
+    .container
+      .subtitle Movie Info 4 You!
+      p#demo
+      image.img1(src="./images/theatre.gif")
+      image.img2(src="./images/spongebobMovie.gif")
+      .welcome Welcome Back Contributing User
+      .signin-page
+        .form
+          form.signin-template(action="/loginUser" method="POST")
+            input(type="text" name="username" placeholder="Username" required)
+            input(type="password" name="password" placeholder="Password" required)
+            button(type="submit") Sign In
+            //- p.forgotpassword
+            //-   | Forgot Password? 
+            //-   a(href="/changePassword" style="color: cornflowerblue;") Change Password
+            p.message
+              | Not a part of Movie-Base yet? 
+              a(href="/signupPage" style="color: cornflowerblue;")  Create an account
+    .scanlines
+  // <script src="server.js"></script>
